@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  transition: all .1s ease-out;
+  transition: all 0.1s ease-out;
 }
 body {
   background-color: rgb(0, 0, 0);
@@ -10,6 +10,7 @@ body {
 .popout {
   position: relative;
   z-index: 10;
+  max-width: 1730px;
 }
 .main {
   background: url(/assets/images/bg.jpg);
@@ -89,6 +90,7 @@ nav img {
   font-weight: 400;
   color: white;
 }
+
 .input {
   padding: 16px 130px 12px 31px;
   background-color: #000000bd;
@@ -127,16 +129,19 @@ nav img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 80%;
+  padding: 0 140px;
+}
+.wrapper {
   margin: auto;
+  max-width: 1800px;
 }
 .first .text {
   color: white;
   line-height: 1.4;
-  width: 30vw;
+  width: 30%;
 }
 .first img {
-  width: 41vw;
+  width: 95%;
 }
 .first .btxt {
   font-size: 42px;
@@ -151,10 +156,10 @@ nav img {
 }
 .image video {
   position: absolute;
-  top: 6vw;
-  left: 5.3vw;
+  top: 88px;
+  left: 79px;
   z-index: -1;
-  width: 31vw;
+  width: 70%;
 }
 .second .image video {
   width: 32vw;
@@ -167,25 +172,24 @@ nav img {
   align-items: flex-start;
   justify-content: center;
   gap: 8px;
-  width: 80vw;
-  margin: auto;
+  width: 90vw;
   margin: 64px auto 10px auto;
-  max-width: 1530px;
+  max-width: 1730px;
 }
 .faq p {
   font-size: 20px;
   font-weight: 600;
   padding: 5px 0 15px 0;
 }
-.faqcard{
+.faqcard {
   position: relative;
   display: flex;
   flex-direction: column;
   gap: 10px;
-  width: 97%;
+  width: 100%;
 }
 
-.infoTile{
+.infoTile {
   background-color: #2d2d2d;
   padding: 15px 15px 15px 24px;
   font-size: 20px;
@@ -195,7 +199,8 @@ nav img {
   visibility: hidden;
   position: absolute;
   opacity: 0;
-  transition: opacity .1s ease-out ;
+
+  transition: opacity 0.15s ease-out;
 }
 
 .faqbox svg {
@@ -244,8 +249,9 @@ footer {
   flex-direction: column;
   justify-content: center;
   gap: 25px;
-  width: 80%;
+  width: 90%;
   margin: 5px auto;
+  max-width: 1630px;
 }
 footer ul {
   list-style-type: none;
@@ -269,7 +275,11 @@ footer p {
   padding: 20px 35px 85px 0;
 }
 
+/* Utility */
+
+
 /* Media Queries */
+
 @media screen and (max-width: 1284px) {
   nav {
     height: 80px;
@@ -292,6 +302,21 @@ footer p {
   }
   .popout img {
     width: 13vw;
+  }
+  .first image {
+    width: 100%;
+  }
+  .first {
+    padding: 0 60px;
+  }
+  .first img {
+    width: 49vw;
+  }
+  .image video {
+    top: 7vw;
+    left: 6.4vw;
+    z-index: -1;
+    width: 37vw;
   }
   .first .btxt {
     font-size: 36px;
@@ -335,6 +360,7 @@ footer p {
   .emailenter input {
     font-size: 14px;
   }
+
   .popout img {
     width: 16vw;
   }
@@ -374,13 +400,16 @@ footer p {
   .popout img {
     width: 16vw;
   }
+  .second{
+    flex-wrap: wrap-reverse !important;
+  }
   .first {
-    flex-direction: column;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     text-align: center;
     width: 98%;
-    padding: 30px 0;
+    padding: 30px 10px;
   }
   .first .btxt {
     font-size: 25px;
@@ -427,7 +456,10 @@ footer p {
     font-size: 20px;
   }
   .faqbox svg {
-    width: 20px;
-    height: 20px;
+    width: 28px;
+    height: 28px;
+  }
+  .infoTile{
+    font-size: 18px;
   }
 }

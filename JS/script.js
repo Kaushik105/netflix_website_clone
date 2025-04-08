@@ -19,7 +19,7 @@ svgs.forEach((svg) => {
         siblingDiv.style.position = "static";
         siblingDiv.style.visibility = "visible";
         e.target.style.transform = "rotate(45deg)";
-      } else {
+    } else {
         siblingDiv.style.visibility = "hidden";
         siblingDiv.style.position = "absolute";
         siblingDiv.style.opacity = 0;
