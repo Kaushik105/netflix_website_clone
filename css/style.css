@@ -197,6 +197,7 @@ nav img {
 
 .faqbox svg:active {
   background-color: #8f8686;
+  border-radius: 100%;
 }
 
 .faqbox {
