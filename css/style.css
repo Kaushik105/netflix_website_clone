@@ -222,6 +222,8 @@ nav img {
   align-items: center;
   font-size: 25px;
   font-weight: 600;
+  user-select: none;
+  -webkit-user-select: none;
 }
 .emailenter {
   display: flex;
@@ -276,7 +278,6 @@ footer p {
 }
 
 /* Utility */
-
 
 /* Media Queries */
 
@@ -400,7 +401,7 @@ footer p {
   .popout img {
     width: 16vw;
   }
-  .second{
+  .second {
     flex-wrap: wrap-reverse !important;
   }
   .first {
@@ -459,7 +460,7 @@ footer p {
     width: 28px;
     height: 28px;
   }
-  .infoTile{
+  .infoTile {
     font-size: 18px;
   }
 }

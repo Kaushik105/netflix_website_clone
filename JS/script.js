@@ -15,15 +15,15 @@ svgs.forEach((svg) => {
 
     if (siblingDiv) {
       if (siblingDiv.style.visibility !== "visible") {
+        e.target.style.transform = "rotate(45deg)";
         siblingDiv.style.opacity = 1;
         siblingDiv.style.position = "static";
         siblingDiv.style.visibility = "visible";
-        e.target.style.transform = "rotate(45deg)";
-    } else {
+      } else {
+      e.target.style.transform = "rotate(0deg)";
         siblingDiv.style.visibility = "hidden";
         siblingDiv.style.position = "absolute";
         siblingDiv.style.opacity = 0;
-        e.target.style.transform = "rotate(0deg)";
       }
     }
   });
